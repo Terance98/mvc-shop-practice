@@ -1,0 +1,26 @@
+{
+  "name": "mvc-shop-practice",
+  "version": "1.0.0",
+  "description": "This is an application made to practice the MVC concepts learned in NodeJS course on UDEMY.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Terance98/mvc-shop-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Terance98/mvc-shop-practice/issues"
+  },
+  "homepage": "https://github.com/Terance98/mvc-shop-practice#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1"
+  }
+}
