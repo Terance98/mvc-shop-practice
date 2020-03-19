@@ -12,8 +12,12 @@ app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(rootPath, 'views')));
+app.use(express.static(path.join(rootPath, 'public', 'css')));
 
+//Using the shop routes as a middleware
 app.use(shopRoutes);
+
+//The error page middleware that will get rendered in case of an invalid route in the url
 app.use((req, res, next) => {
     res.send("<h1>The page was not found :(</h1>");
 });
